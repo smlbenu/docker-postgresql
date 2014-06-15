@@ -3,7 +3,7 @@
 # https://github.com/orchardup/docker-postgresql/blob/master/Dockerfile
 
 FROM ubuntu:14.04
-MAINTAINER Jack Chu "jack@jackchu.com"
+MAINTAINER Shawn Lewis “sml@benunets”.com
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get -y update
