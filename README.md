@@ -1,14 +1,14 @@
-docker-postgresql
+mhn_postgres
 =================
 
 PostgreSQL for Docker. The data directory is set to `/data` so you can use a data only volume.
 
     $ docker run -name postgresql-data -v /data ubuntu /bin/bash
-    $ docker run -d -p 5432:5432 -volumes-from postgresql-data -e POSTGRESQL_USER=docker -e POSTGRESQL_PASS=docker -e POSTGRESQL_DB=docker kamui/postgresql
-    da809981545f
-    $ psql -h localhost -U docker docker
-    Password for user docker:
-    psql
+    $ docker run -d -p 5432:5432 -volumes-from postgresql-data -e POSTGRESQL_USER=ssc -e POSTGRESQL_PASS=trustno1 -e POSTGRESQL_DB=devpg smlbenu/mhn_postgresk
+    
+    $ psql -h localhost -U ssc devpg
+    Password for user :
+    trustno1
     Type "help" for help.
 
     docker=#
