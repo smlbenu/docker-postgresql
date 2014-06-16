@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-POSTGRESQL_USER=${POSTGRESQL_USER:-"docker"}
-POSTGRESQL_PASS=${POSTGRESQL_PASS:-"docker"}
-POSTGRESQL_DB=${POSTGRESQL_DB:-"docker"}
+POSTGRESQL_USER=${POSTGRESQL_USER:-"ssc"}
+POSTGRESQL_PASS=${POSTGRESQL_PASS:-"trustno1"}
+POSTGRESQL_DB=${POSTGRESQL_DB:-"devpg"}
 
 POSTGRESQL_BIN_PATH=/usr/lib/postgresql/9.3/bin
 POSTGRESQL_CONFIG_FILE=/etc/postgresql/9.3/main/postgresql.conf
